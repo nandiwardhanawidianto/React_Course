@@ -66,4 +66,23 @@ html {
   background: unset;
   border: unset;
   outline: unset;
+  cursor: pointer;
+}
+
+.add {
+  padding: 16px;
+}
+
+.add-form {
+  display: flex;
+  align-items: center;
+}
+
+.add-input {
+  background: unset;
+  border: unset;
+  border-bottom: 1px solid var(--main-red-color);
+  outline: unset;
+  padding: 0 64px;
+  flex: 1;
 }
