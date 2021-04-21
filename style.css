@@ -33,7 +33,7 @@ html {
 
 .container {
   width: 600px;
-  height: 600px;
+  height: 800px;
   background-color: #f2eecb;
   border-radius: 4px;
   padding: 32px;
@@ -62,7 +62,7 @@ html {
   font-size: 1.8rm;
   font-family: "Roboto", sans-serif;
   font-weight: bolder;
-  padding: 24px;
+  padding: 16px;
   background: unset;
   border: unset;
   outline: unset;
@@ -75,7 +75,7 @@ html {
 
 .add-form {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .add-input {
@@ -85,4 +85,16 @@ html {
   outline: unset;
   padding: 0 64px;
   flex: 1;
+}
+
+.add-btn {
+  font-size: 1.8 rem;
+  font-weight: bolder;
+  text-transform: uppercase;
+  padding: 16px;
+  cursor: pointer;
+  padding-right: unset;
+  border: unset;
+  background: unset;
+  outline: unset;
 }
