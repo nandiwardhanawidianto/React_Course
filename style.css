@@ -4,6 +4,7 @@
 
 :root {
   --main-red-color: #e06262;
+  --main-black-color: #484848;
 }
 
 .main-red-color {
@@ -40,10 +41,11 @@ html {
 }
 
 .frame {
-  border: 1px solid #484848;
+  border: 1px solid var(--main-black-color);
   height: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 .header {
@@ -56,6 +58,7 @@ html {
   text-align: center;
   font-size: 30px;
   text-transform: uppercase;
+  color: var(--main-black-color);
 }
 
 .header-btn {
@@ -67,6 +70,14 @@ html {
   border: unset;
   outline: unset;
   cursor: pointer;
+}
+
+.header-btn.main-red-color:active {
+  text-shadow: 1px 1px 2px var(--main-red-color);
+}
+
+.header-btn.main-black-color:active {
+  text-shadow: 1px 1px 2px var(--main-black-color);
 }
 
 .add {
@@ -83,7 +94,7 @@ html {
   border: unset;
   border-bottom: 1px solid var(--main-red-color);
   outline: unset;
-  padding: 0 64px;
+  padding: 2 64px;
   flex: 1;
 }
 
@@ -91,10 +102,29 @@ html {
   font-size: 1.8 rem;
   font-weight: bolder;
   text-transform: uppercase;
-  padding: 16px;
+  padding: 10px;
   cursor: pointer;
   padding-right: unset;
   border: unset;
   background: unset;
   outline: unset;
+}
+
+.add-btn.main-black-color:active{
+  text-shadow 1px 2px 2px var(--main-black-color);
+}
+
+.todos {
+  display: flex;
+  flex-direction: column;
+}
+
+.todo {
+  position: relative;
+  flex: 1 0 auto;
+  text-align: center;
+  min-height: 34 px;
+  font-size: 24px;
+  margin: 16px 0 0;
+  border-bottom: 1px solid var(--main-red-color);
 }
